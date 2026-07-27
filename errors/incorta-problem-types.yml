@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: derived
+source: https://docs.incorta.com/latest/references-public-api-v2/
+format: json
+# Derived from documented Incorta Public API v2 authorization/permission behavior.
+# Incorta returns JSON error payloads; it does not document an RFC 9457
+# application/problem+json envelope, so these are captured as plain JSON errors.
+problems:
+- status: 401
+  title: Unauthorized
+  detail: Missing, invalid, or expired bearer token (PAT or OAuth 2.0 JWT).
+- status: 403
+  title: Forbidden
+  detail: >-
+    Public API access not enabled for the user/group, or the user lacks the
+    required role (SuperRole / Schema Manager) or entity access rights for the
+    requested operation.
+- status: 404
+  title: Not Found
+  detail: Referenced tenant, schema, dashboard, or object does not exist.
+- status: 400
+  title: Bad Request
+  detail: Malformed request body or invalid parameters (e.g. unknown schema name in a load request).
+- status: 500
+  title: Internal Server Error
+  detail: Unexpected server-side error while processing the request.

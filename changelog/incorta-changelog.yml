@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.incorta.com/
+# Incorta publishes per-release release notes in its versioned documentation.
+# API-relevant milestones captured from the Public API documentation; not a full
+# dated changelog (Incorta does not publish a single dated API-changelog feed).
+scheme: per-release-notes
+docs: https://docs.incorta.com/latest/
+current: '6.0'
+entries:
+- version: '6.0'
+  highlights:
+  - Introduced Public API v2 under base path /incorta/api/v2.
+  - Replaced v1 API-key auth with Personal Access Tokens (PAT) and OAuth 2.0 JWT.
+  breaking: true
+- version: '5.0'
+  highlights:
+  - Public API v1 available (API-key authentication) across 5.x releases.
+  breaking: false

@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: derived
+source: docs.incorta.com Public API v2 reference + www.incorta.com/security
+# Cross-cutting standards posture derived from Incorta's documented API + security surface.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: Public API v2 accepts OAuth 2.0 JWT bearer tokens from a user-configured authorization server.
+- id: bearer-token-rfc6750
+  conforms: true
+  evidence: Authorization Bearer token header used for both PAT and JWT.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Errors are returned as JSON but not documented as application/problem+json.
+- id: iso-iec-27002-2013
+  conforms: aligned
+  evidence: Security Terms state alignment to ISO/IEC 27002:2013 industry-standard safeguards.
+- id: nist-800-44
+  conforms: aligned
+  evidence: Security Terms reference NIST 800-44 web-server security guidance.
+- id: fhir-r4
+  conforms: false
+- id: scim
+  conforms: false
+- id: odata
+  conforms: false

@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: derived
+status: candidate
+source: https://docs.incorta.com/latest/references-public-api-v2/
+# No official hosted Incorta MCP server found. This is a CANDIDATE tool list
+# derived from documented Public API v2 endpoints (tenant-scoped, bearer auth).
+server:
+  name: incorta
+  transport: http
+  base_path: /incorta/api/v2/{tenantName}
+  auth: bearer (PAT or OAuth 2.0 JWT)
+tools:
+- name: load_schema
+  description: Start the load of one or more physical schemas.
+  source_operation: POST /incorta/api/v2/{tenantName}/schema/load
+- name: get_schema_status
+  description: Return details/status of a physical or business schema (objects, columns, owner, timestamps).
+  source_operation: GET /incorta/api/v2/{tenantName}/schema/{schemaName}/status
+- name: query_business_view
+  description: Query a single business view into a listing, aggregated, or pivot table for external consumption.
+  source_operation: POST /incorta/api/v2/{tenantName}/query
+- name: extract_to_external_table
+  description: Extract Incorta data to an external table.
+  source_operation: POST /incorta/api/v2/{tenantName}/extract-to-external-table
+- name: schedule_dashboard_report
+  description: Create and trigger a scheduler job to send a dashboard report.
+  source_operation: POST /incorta/api/v2/{tenantName}/dashboards/{dashboardGuid}/send-report
+- name: transfer_ownership
+  description: Transfer ownership of Incorta objects between users.
+  source_operation: POST /incorta/api/v2/{tenantName}/transfer-ownership
+- name: reset_passwords
+  description: Reset passwords for users.
+  source_operation: POST /incorta/api/v2/{tenantName}/reset-passwords

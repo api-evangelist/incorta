@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.incorta.com/
+versioning:
+  scheme: uri-path
+  current: v2
+  previous: v1
+  since: { v1: '5.0', v2: '6.0' }
+  docs: https://docs.incorta.com/latest/references-public-api-v2/
+  note: >-
+    Public API v1 is available in releases 5.0+ and remains supported; Public API
+    v2 was introduced in 6.0 and changes the auth model (API key -> PAT/JWT).
+release_notes:
+  docs: https://docs.incorta.com/latest/
+  note: Per-release release notes are published in the versioned documentation.
+status_page: https://status.incorta.com
+deprecation:
+  policy_url: null
+  note: No formal RFC 8594 Sunset/Deprecation-header policy published; v1 remains available alongside v2.

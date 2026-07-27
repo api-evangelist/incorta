@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.incorta.com/5.1/tools-cli/
+# The Incorta CLI (incorta.py) is a Python tool run from a Bash shell that manages
+# Incorta metadata (schemas, dashboards, alerts, access, session variables) over
+# HTTP. It imports/exports metadata only — it does not expose data stored in Incorta.
+name: Incorta CLI
+binary: incorta.py
+language: python
+docs: https://docs.incorta.com/5.1/tools-cli/
+install: Distributed as a Python script (incorta.py) run from Bash; uses Python HTTP modules.
+command_groups:
+- group: schemas
+  commands:
+  - list_schemas
+  - export_schemas
+  - import
+  - load_schema_from_snapshot
+- group: dashboards
+  commands:
+  - export_dashboards
+- group: alerts
+  commands:
+  - export_alerts
+  - import_alerts
+- group: access-control
+  commands:
+  - grant_group_access
+  - revoke_group_access
+  - revoke_user_access
+- group: groups
+  commands:
+  - list_groups
+- group: session-variables
+  commands:
+  - export_session_variables
+  - import_session_variables
+- group: data
+  commands:
+  - upload_data_file
+notes:
+- A separate Upload Service CLI exists for Incorta Cloud (https://docs.incorta.com/cloud/tools-upload-service-cli/).

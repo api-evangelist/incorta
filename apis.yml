@@ -1,8 +1,29 @@
 aid: incorta
 name: Incorta
-description: 'Incorta is a company surfaced as a portfolio company of gv, kleiner-perkins and added to
-  the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Incorta is a unified data and analytics platform that lets teams acquire, enrich,
+  analyze, and act on operational data without a traditional data warehouse or heavy
+  dimensional modeling, using its Direct Data Mapping engine to query source data
+  directly at high speed. For developers, Incorta exposes a tenant-scoped Public API
+  (v1 and v2) under /incorta/api/v2 for loading physical schemas, querying business
+  views, extracting data to external tables, scheduling dashboard reports, and
+  administration, authenticated with Personal Access Tokens or OAuth 2.0 JWTs. Incorta
+  also ships a Python CLI for metadata import/export, Python Data APIs for external
+  notebooks, and a TypeScript Component SDK for building custom dashboard visualizations.
+  Incorta is backed by GV and Kleiner Perkins.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/67b7abfbb037e687d0a415ec/67ec5981d1278178491febdf_Incorta-OG.jpg
 url: https://raw.githubusercontent.com/api-evangelist/incorta/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,11 +34,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
-apis: []
+- Analytics
+- Business Intelligence
+- Data Platform
+- Data Analytics
+- Data Integration
+- Dashboards
+apis:
+- name: Incorta Public API v2
+  description: >-
+    Tenant-scoped REST API for loading schemas, querying business views, extracting
+    data to external tables, scheduling dashboard reports, and administration.
+    Authenticated with a bearer Personal Access Token or OAuth 2.0 JWT.
+  humanURL: https://docs.incorta.com/latest/references-public-api-v2/
+  baseURL: https://cloud.incorta.com/incorta/api/v2
+  properties:
+  - type: Documentation
+    url: https://docs.incorta.com/latest/references-public-api-v2/
+  - type: APIReference
+    url: https://docs.incorta.com/latest/references-public-api-v2/
+  - type: Authentication
+    url: authentication/incorta-authentication.yml
+  - type: Conventions
+    url: conventions/incorta-conventions.yml
+  - type: ErrorCatalog
+    url: errors/incorta-problem-types.yml
+  - type: Lifecycle
+    url: lifecycle/incorta-lifecycle.yml
+  - type: MCPServer
+    url: mcp/incorta-mcp.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,4 +74,59 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://incorta.com
+  url: https://www.incorta.com
+- type: DeveloperPortal
+  url: https://docs.incorta.com/
+- type: Documentation
+  url: https://docs.incorta.com/
+- type: APIReference
+  url: https://docs.incorta.com/latest/references-public-api-v2/
+- type: GettingStarted
+  url: https://docs.incorta.com/latest/references-public-api-v2/
+- type: Support
+  url: https://community.incorta.com/
+- type: Blog
+  url: https://www.incorta.com/blog
+- type: GitHubOrganization
+  url: https://github.com/Incorta
+- type: StatusPage
+  url: https://status.incorta.com
+- type: TermsOfService
+  url: https://www.incorta.com/terms
+- type: PrivacyPolicy
+  url: https://www.incorta.com/privacy
+- type: TrustCenter
+  url: security/incorta-trust-center.yml
+- type: Authentication
+  url: authentication/incorta-authentication.yml
+- type: Conventions
+  url: conventions/incorta-conventions.yml
+- type: ErrorCatalog
+  url: errors/incorta-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/incorta-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/incorta-lifecycle.yml
+- type: ChangeLog
+  url: changelog/incorta-changelog.yml
+- type: Conformance
+  url: conformance/incorta-conformance.yml
+- type: Packages
+  url: packages/incorta-packages.yml
+- type: SDKs
+  url: packages/incorta-packages.yml
+- type: CLI
+  url: cli/incorta-cli.yml
+- type: Components
+  url: components/incorta-components.yml
+- type: MCPServer
+  url: mcp/incorta-mcp.yml
+- type: LLMsTxt
+  url: llms/incorta-llms.txt
+- type: DomainSecurity
+  url: security/incorta-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

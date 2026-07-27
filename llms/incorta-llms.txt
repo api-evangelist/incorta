@@ -1,0 +1,34 @@
+# Incorta
+
+> Incorta is a unified data and analytics platform that lets teams acquire, enrich, analyze, and act on data without a traditional data warehouse or heavy data modeling. Its Public API v2 exposes tenant-scoped operations for schema loading, querying business views, extracting data to external tables, scheduling dashboard reports, and administration, authenticated with Personal Access Tokens or OAuth 2.0 JWTs.
+
+## APIs
+
+- [Public API v2 Reference](https://docs.incorta.com/latest/references-public-api-v2/): Tenant-scoped REST API under /incorta/api/v2 (bearer PAT or OAuth 2.0 JWT).
+- [Public API v1 Reference](https://docs.incorta.com/cloud/references-public-api-v1/): Legacy v1 (API-key auth), releases 5.0+.
+- [Data APIs for External Notebooks](https://docs.incorta.com/latest/tools-data-apis-for-external-notebooks/): Python read/query/save access from Jupyter/Zeppelin.
+
+## Docs
+
+- [Incorta Documentation](https://docs.incorta.com/): Product, tools, and API reference.
+- [Load Schema Endpoint](https://docs.incorta.com/latest/references-api-load-schema-endpoint-v2/)
+- [Schema Status Endpoint](https://docs.incorta.com/latest/references-api-schema-status-endpoint-v2/)
+- [Query Endpoint](https://docs.incorta.com/latest/references-api-query-endpoint-v2/)
+- [Extract to External Table Endpoint](https://docs.incorta.com/latest/references-api-extract-to-external-table-endpoint-v2/)
+
+## Developer
+
+- [Incorta CLI](https://docs.incorta.com/5.1/tools-cli/): Python CLI for metadata import/export and administration.
+- [Component SDK](https://github.com/Incorta/component-sdk): Build custom visualization components for Incorta dashboards.
+- [create-incorta-component](https://github.com/Incorta/create-incorta-component): Scaffolder for new Incorta components.
+- [GitHub Org](https://github.com/Incorta)
+- [Community](https://community.incorta.com/): Developer and admin knowledge base.
+
+## Company
+
+- [Website](https://www.incorta.com/)
+- [Blog](https://www.incorta.com/blog)
+- [Security](https://www.incorta.com/security)
+- [Status](https://status.incorta.com)
+- [Terms of Use](https://www.incorta.com/terms)
+- [Privacy Policy](https://www.incorta.com/privacy)

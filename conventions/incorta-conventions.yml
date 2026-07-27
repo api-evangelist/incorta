@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.incorta.com/latest/references-public-api-v2/
+# Cross-cutting request/response semantics for the Incorta Public API v2.
+authentication:
+  style: bearer token (PAT or OAuth 2.0 JWT)
+  header: 'Authorization: Bearer {token}'
+  ref: authentication/incorta-authentication.yml
+base_path:
+  pattern: /incorta/api/v2/{tenantName}
+  tenant_in_path: true
+  note: Every v2 endpoint is scoped to a tenant name segment.
+versioning:
+  style: uri-path
+  versions: [v1, v2]
+  current: v2
+  since: { v1: '5.0', v2: '6.0' }
+  ref: lifecycle/incorta-lifecycle.yml
+content_type:
+  request: application/json
+  response: application/json
+idempotency:
+  supported: false
+  note: No documented idempotency-key mechanism; load/schema operations are managed via explicit job status endpoints.
+pagination:
+  supported: unknown
+  note: The query endpoint returns tabular result sets; no documented cursor/offset pagination contract for list endpoints.
+error_envelope:
+  format: json
+  ref: errors/incorta-problem-types.yml
+rate_limiting:
+  documented: false

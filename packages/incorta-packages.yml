@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Incorta
+# First-party Incorta developer libraries. The Component SDK + scaffolder are
+# published in the Incorta GitHub org (not on the public npm registry; the
+# @incorta-org/* scopes are consumed inside the Incorta build environment).
+# The Python data-API library + incorta_ml are installed into the Incorta Cloud
+# runtime (Configurations > Python Packages), not distributed on PyPI.
+packages:
+- language: typescript
+  registry: github
+  name: "@incorta-org/component-sdk"
+  repo: https://github.com/Incorta/component-sdk
+  description: Incorta Component SDK — build custom visualization components for Incorta dashboards.
+  official: true
+- language: javascript
+  registry: github
+  name: "@incorta-org/create-incorta-component"
+  repo: https://github.com/Incorta/create-incorta-component
+  install: npx @incorta-org/create-incorta-component
+  description: Scaffolder that generates a new Incorta custom component project.
+  official: true
+- language: python
+  registry: incorta-cloud
+  name: incorta (Data APIs for external notebooks)
+  url: https://docs.incorta.com/latest/tools-data-apis-for-external-notebooks/
+  description: Python library to read, query, and save data through Incorta Data APIs from external notebooks (Jupyter/Zeppelin).
+  official: true
+- language: python
+  registry: incorta-cloud
+  name: incorta_ml
+  url: https://docs.incorta.com/latest/tools-data-apis-for-external-notebooks/
+  description: PySpark ML helper library for building models over Incorta materialized views.
+  official: true

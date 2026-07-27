@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+type: TrustCenter
+source: https://www.incorta.com/security
+url: https://www.incorta.com/security
+# Incorta publishes a security posture page and Security Terms. It does NOT
+# publicly assert holding named third-party certifications; the frameworks below
+# are the industry-standard safeguards Incorta states it aligns to, plus the
+# audit-report families it references in its Security Terms. Not confirmed certs.
+standards_aligned:
+- ISO/IEC 27002:2013
+- NIST 800-44
+- OWASP (Guide to Building Secure Web Applications)
+- CIS (Center for Internet Security Standards)
+audit_reports_referenced:
+- SOC
+- ISO
+- NIST
+- PCI DSS
+- HIPAA
+certifications: []
+security_terms: https://www.incorta.com/legal-pages/incorta-security-terms
+evidence:
+- source: https://www.incorta.com/security
+  keywords:
+  - iso/iec 27002
+  - nist 800-44
+  - encryption
+  - multi-factor authentication

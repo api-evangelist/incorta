@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Incorta/component-sdk
+# Incorta ships a client-side custom-visualization component framework: authors
+# build embeddable dashboard visualization components with the Component SDK and
+# scaffold them with create-incorta-component. These render inside Incorta
+# dashboards/insights (distinct from the server-side data-API libraries).
+families:
+- name: Custom Visualization Components
+  description: Author custom chart/visualization components rendered inside Incorta dashboards and insights.
+  loaders:
+  - "@incorta-org/component-sdk"
+  - "@incorta-org/create-incorta-component"
+  docs: https://github.com/Incorta/component-sdk
+  language: typescript
