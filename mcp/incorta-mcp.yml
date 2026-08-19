@@ -2,8 +2,6 @@ generated: '2026-07-19'
 method: derived
 status: candidate
 source: https://docs.incorta.com/latest/references-public-api-v2/
-# No official hosted Incorta MCP server found. This is a CANDIDATE tool list
-# derived from documented Public API v2 endpoints (tenant-scoped, bearer auth).
 server:
   name: incorta
   transport: http
@@ -31,3 +29,9 @@ tools:
 - name: reset_passwords
   description: Reset passwords for users.
   source_operation: POST /incorta/api/v2/{tenantName}/reset-passwords
+deployment:
+  mode: none
+  verified: derived
+  tools: 7
+  checked: '2026-08-12'
+  source: catalog MCP census
