@@ -3,9 +3,12 @@
   "feeds": [
     {
       "source": "https://community.incorta.com/",
-      "error": "HTTPError"
+      "feed_url": "https://community.incorta.com/wdmcw32433/rss/Community?interaction.style=forum",
+      "title": "",
+      "saved": 1,
+      "method": "discovered"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-08-22T20:20:02Z"
+  "post_count": 1,
+  "fetched": "2026-08-30T22:33:40Z"
 }
