@@ -76,8 +76,9 @@ apis:
     url: errors/incorta-problem-types.yml
   - type: Lifecycle
     url: lifecycle/incorta-lifecycle.yml
-  - type: MCPServer
+  - type: X-MCPServerCandidate
     url: mcp/incorta-mcp.yml
+    note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -130,8 +131,9 @@ common:
   url: cli/incorta-cli.yml
 - type: Components
   url: components/incorta-components.yml
-- type: MCPServer
+- type: X-MCPServerCandidate
   url: mcp/incorta-mcp.yml
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
 - type: LLMsTxt
   url: llms/incorta-llms.txt
 - type: DomainSecurity
